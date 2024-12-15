@@ -4,8 +4,365 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>socialbook</title>
+  <!--<link rel="stylesheet" href="scripts.js"> -->
+  <link rel="stylesheet" href="socialbook.css">
+  <!-- add Kit font -->
+  <script src="https://kit.fontawesome.com/de129c26f6.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- nav 1 -->
+  <nav>
+    <div class="nav-left">
+      <img class="logo" src="../img/socialbook_img/logo.png" alt="logo">
+      <ul>
+        <li><img src="../img/socialbook_img/notification.png" alt=""></li>
+        <li><img src="../img/socialbook_img/inbox.png" alt=""></li>
+        <li><img src="../img/socialbook_img/video.png" alt=""></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <div class="search-box">
+        <img src="..//img/socialbook_img/search.png" alt="">
+        <input type="text" placeholder="Search" class="search-input">
+      </div>
+      <!-- adding Javascript -------------------------------------------->
+      <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+        <img src="..//img/socialbook_img/1.jpg" alt="">
+      </div>
+    </div>
+    <!-- setting menu -->
+    <div class="setting-menu">
+      <div id="dark-btn">
+        <span></span>
+      </div>
+
+
+      <div class="setting-menu-inner">
+      <!-- user profile 1 -->
+      <div class="user-profile">
+          <img class="user-img-1" src="..//img/socialbook_img/1.jpg">
+          <div>
+            <p>John Nicholson</p>
+            <a href="#">See your profile</a>
+          </div>
+        </div>
+        <hr>
+          <!-- user profile 2 -->
+          <div class="user-profile">
+          <img src="..//img/socialbook_img/feedback.png">
+          <div>
+            <p>Give feedback</p>
+            <a href="#">Help us to improve the new design.</a>
+          </div>
+        </div>
+        <hr>
+        
+        <div class="setting-link">
+          <img class="setting-icon" src="..//img/socialbook_img/setting.png" alt="">
+          <a href="#">Setting & privacy <img src="..//img/socialbook_img/arrow.png " width="10px" alt=""></a>
+        </div>
+
+        <div class="setting-link">
+          <img class="setting-icon" src="..//img/socialbook_img/help.png" alt="">
+          <a href="#">help & support <img src="..//img/socialbook_img/arrow.png " width="10px" alt=""></a>
+        </div>
+
+
+        <div class="setting-link">
+          <img class="setting-icon" src="..//img/socialbook_img/display.png" alt="">
+          <a href="#">Display & Accessibility <img src="..//img/socialbook_img/arrow.png " width="10px" alt=""></a>
+        </div>
+
+        <div class="setting-link">
+          <img class="setting-icon" src="..//img/socialbook_img/logout.png" alt="">
+          <a href="#">Logout <img src="..//img/socialbook_img/arrow.png " width="10px" alt=""></a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <!-- div sidebar -->
+<div class="container">
+  <!-- left-sidebar -->
+  <div class="left-sidebar">
+    <div class="imp-link">
+      <a href="#"><img src="..//img/socialbook_img/news.png" alt="image">Latest News</a>
+      <a href="#"><img src="..//img/socialbook_img/friends.png" alt="image">Friends</a>
+      <a href="#"><img src="..//img/socialbook_img/group.png" alt="image">Group</a>
+      <a href="#"><img src="..//img/socialbook_img/marketplace.png" alt="image">Marketplace</a>
+      <a href="#"><img src="..//img/socialbook_img/watch.png" alt="image">Watch</a>
+      <a href="#">See More</a>
+    </div>
+    <div class="shortcut-link">
+      <p>Your shortcuts</p>
+      <a href="#"><img src="..//img/socialbook_img/shortcut-1.png" alt="">Web Developers</a>
+      <a href="#"><img src="..//img/socialbook_img/shortcut-2.png" alt="">Web Design course</a>
+      <a href="#"><img src="..//img/socialbook_img/shortcut-3.png" alt="">Full Stack Developers</a>
+      <a href="#"><img src="..//img/socialbook_img/shortcut-4.png" alt="">Website Experts</a>
+    </div>
+  </div>
+<!-- main-content -->
+<div class="main-content">
+    <div class="story-gallery">
+        <!-- story 1 -->
+        <div class="story story1">
+          <img src="..//img/socialbook_img/upload.png">
+          <p>Post Story</p>
+        </div>
+        <!-- story 2 -->
+        <div class="story story2">
+          <img src="..//img/socialbook_img/member-1.png">
+          <p>Samona</p>
+        </div>
+        <!-- story 3-->
+        <div class="story story3">
+          <img src="..//img/socialbook_img/member-2.png">
+          <p>Alison</p>
+        </div>
+        <!-- story 4 -->
+        <div class="story story4">
+          <img src="..//img/socialbook_img/member-3.png">
+          <p>Jackson</p>
+        </div>
+        <!-- story 5 -->
+        <div class="story story5">
+          <img src="..//img/socialbook_img/member-4.png">
+          <p>John Doe</p>
+        </div>
+    </div> 
+    <!-- write container -->
+    <div class="write-post-container">
+        <div class="user-profile">
+          <img src="..//img/socialbook_img/profile-pic.png">
+          <div>
+            <p>John Nicholson</p>
+          <small>Public <i class="fas fa-caret-down"></i></small>
+          </div>
+        </div>
+        <div class="post-input-container">
+          <textarea rows="3" placeholder="What's on your mind?Toàn Nguyễn"></textarea>
+          <div class="add-post-links">
+            <a href="#"><img src="..//img/socialbook_img/live-video.png" alt="">Live Video</a>
+            <a href="#"><img src="..//img/socialbook_img/photo.png" alt="">Photo/Video</a>
+            <a href="#"><img src="..//img/socialbook_img/feeling.png" alt="">Feeling/Activity</a>
+          </div>
+        </div>
+    </div>
+  <!-- post container 1 -->
+  <div class="post-container">
+    <!-- post row 1 -->
+    <div class="post-row">
+      <div class="user-profile">
+        <img src="..//img/socialbook_img/profile-pic.png">
+        <div>
+          <p>John Nicholson</p>
+          <span>December 15 2024, 8:43 AM</span>
+        </div>
+      </div>
+      <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+    </div>
+      <p class="post-text">Subscribe <span> @Easy Tutorials</span> Youtube Chanel to watch more videos on website development and UI designs. <a href="#">#EasyTutorials</a>
+      <a href="#">#EasyYoutubeChanels</a></p>
+      <img class="post-image" src="..//img/socialbook_img/feed-image-1.png" alt="">
+    <!-- post row 2-->
+    <div class="post-row">
+      <div class="activity-icons">
+        <div><img src="..//img/socialbook_img/like-blue.png" alt="">120</div>
+        <div><img src="..//img/socialbook_img/comments.png" alt="">45</div>
+        <div><img src="..//img/socialbook_img/share.png" alt="">25</div>
+      </div>
+      <div class="post-profile-icons">
+        <img src="..//img/socialbook_img/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+  </div>
+  <!-- post container 2 -->
+  <div class="post-container">
+    <!-- post row 1 -->
+    <div class="post-row">
+      <div class="user-profile">
+        <img src="..//img/socialbook_img/profile-pic.png">
+        <div>
+          <p>John Nicholson</p>
+          <span>December 15 2024, 8:43 AM</span>
+        </div>
+      </div>
+      <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+    </div>
+      <p class="post-text">Like and share this video with friends, tag <span> @Easy Tutorials</span> facebook page on your post. Ask your doubts in the comments<a href="#">#EasyTutorials</a>
+      <a href="#">#EasyYoutubeChanels</a></p>
+      <img class="post-image" src="..//img/socialbook_img/feed-image-2.png" alt="">
+    <!-- post row 2-->
+    <div class="post-row">
+      <div class="activity-icons">
+        <div><img src="..//img/socialbook_img/like.png" alt="">120</div>
+        <div><img src="..//img/socialbook_img/comments.png" alt="">45</div>
+        <div><img src="..//img/socialbook_img/share.png" alt="">25</div>
+      </div>
+      <div class="post-profile-icons">
+        <img src="..//img/socialbook_img/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+  </div>
+  <!-- post container 3 -->
+  <div class="post-container">
+    <!-- post row 1 -->
+    <div class="post-row">
+      <div class="user-profile">
+        <img src="..//img/socialbook_img/profile-pic.png">
+        <div>
+          <p>John Nicholson</p>
+          <span>December 15 2024, 8:43 AM</span>
+        </div>
+      </div>
+      <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+    </div>
+      <p class="post-text">Subscribe <span> @Easy Tutorials</span> Youtube Chanel to watch more videos on website development and UI designs. <a href="#">#EasyTutorials</a>
+      <a href="#">#EasyYoutubeChanels</a></p>
+      <img class="post-image" src="..//img/socialbook_img/feed-image-3.png" alt="">
+    <!-- post row 2-->
+    <div class="post-row">
+      <div class="activity-icons">
+        <div><img src="..//img/socialbook_img/like.png" alt="">120</div>
+        <div><img src="..//img/socialbook_img/comments.png" alt="">45</div>
+        <div><img src="..//img/socialbook_img/share.png" alt="">25</div>
+      </div>
+      <div class="post-profile-icons">
+        <img src="..//img/socialbook_img/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- post container 4 -->
+  <div class="post-container">
+    <!-- post row 1 -->
+    <div class="post-row">
+      <div class="user-profile">
+        <img src="..//img/socialbook_img/profile-pic.png">
+        <div>
+          <p>John Nicholson</p>
+          <span>December 15 2024, 8:43 AM</span>
+        </div>
+      </div>
+      <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+    </div>
+      <p class="post-text">Subscribe <span> @Easy Tutorials</span> Youtube Chanel to watch more videos on website development and UI designs. <a href="#">#EasyTutorials</a>
+      <a href="#">#EasyYoutubeChanels</a></p>
+      <img class="post-image" src="..//img/socialbook_img/feed-image-4.png" alt="">
+    <!-- post row 2-->
+    <div class="post-row">
+      <div class="activity-icons">
+        <div><img src="..//img/socialbook_img/like.png" alt="">120</div>
+        <div><img src="..//img/socialbook_img/comments.png" alt="">45</div>
+        <div><img src="..//img/socialbook_img/share.png" alt="">25</div>
+      </div>
+      <div class="post-profile-icons">
+        <img src="..//img/socialbook_img/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+  </div>
+  <!-- post container 5 -->
+  <div class="post-container">
+    <!-- post row 1 -->
+    <div class="post-row">
+      <div class="user-profile">
+        <img src="..//img/socialbook_img/profile-pic.png">
+        <div>
+          <p>John Nicholson</p>
+          <span>December 15 2024, 8:43 AM</span>
+        </div>
+      </div>
+      <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+    </div>
+      <p class="post-text">Subscribe <span> @Easy Tutorials</span> Youtube Chanel to watch more videos on website development and UI designs. <a href="#">#EasyTutorials</a>
+      <a href="#">#EasyYoutubeChanels</a></p>
+      <img class="post-image" src="..//img/socialbook_img/feed-image-5.png" alt="">
+    <!-- post row 2-->
+    <div class="post-row">
+      <div class="activity-icons">
+        <div><img src="..//img/socialbook_img/like.png" alt="">120</div>
+        <div><img src="..//img/socialbook_img/comments.png" alt="">45</div>
+        <div><img src="..//img/socialbook_img/share.png" alt="">25</div>
+      </div>
+      <div class="post-profile-icons">
+        <img src="..//img/socialbook_img/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+  </div>
+  <button class="load-more-btn" type="button">Load More</button>
+</div>
+    <!-- right-sidebar -->
+  <div class="right-sidebar">
+      <div class="sidebar-title">
+        <h4>Events</h4>
+        <a href="#">See All</a>
+      </div>
+      <!-- event 1 -->
+      <div class="event">
+            <div class="left-event">
+              <h3>18</h3>
+              <span>March</span>
+            </div>
+            <div class="right-event">
+              <h4>Social Media</h4>
+              <p><i class="fas fa-map-marker-alt location"></i>Willson Tech Park</p>
+              <a href="#">More Info</a>
+            </div>
+      </div>
+      <!-- event 2 -->
+    <div class="event">
+      <div class="left-event">
+        <h3>22</h3>
+        <span>June</span>
+      </div>
+      <div class="right-event">
+        <h4>Mobile Marketing</h4>
+        <p><i class="fas fa-map-marker-alt location"></i>Willson Tech Park</p>
+        <a href="#">More Info</a>
+      </div>
+    </div>
+      <!-- sidebar title 1 -->
+    <div class="sidebar-title">
+      <h4>Advertisement</h4>
+      <a href="#">Close</a>
+    </div>
+    <img class="sidebar-ads" src="..//img/socialbook_img/advertisement.png" alt="">
+    <!-- sidebar title 2 -->
+    <div class="sidebar-title">
+      <h4>Conversation</h4>
+      <a href="#">Hide Chat</a>
+    </div>
+    <!-- online list 1 -->
+    <div class="online-list">
+      <div class="online">
+      <img src="..//img/socialbook_img/member-1.png" alt="">
+      </div>
+      <p>Alison Mina</p>
+    </div>
+    <!-- online list 2 -->
+    <div class="online-list">
+      <div class="online">
+      <img src="..//img/socialbook_img/member-2.png" alt="">
+      </div>
+      <p>Jackson Aston</p>
+    </div>
+    <!-- online list 3 -->
+    <div class="online-list">
+      <div class="online">
+      <img src="..//img/socialbook_img/member-3.png" alt="">
+      </div>
+      <p>Samona Rose</p>
+    </div>
   
+  </div>
+  <!-- end main -->
+</div>
+
+<!-- footer -->
+<div class="footer">
+<p>Copyright @2024 Toàn Nguyễn All Rights Reserved</p>
+</div>
+<script src="..//lesson1-socialBook/scripts.js"></script>
 </body>
 </html>
+<!-- Thank You! -->
