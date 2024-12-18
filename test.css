@@ -1,0 +1,35 @@
+/* Định dạng chung cho menu */
+#menu {
+    background-color: #333; /* Màu nền */
+    padding: 10px 0; /* Khoảng cách trên dưới */
+    width: 100%; /* Chiều rộng full */
+    position: sticky; /* Giữ menu ở trên khi cuộn trang */
+    top: 0; /* canh trên cùng */
+    z-index: 100; /* Đảm bảo menu nằm trên các phần tử khác */
+}
+
+#menu ul {
+    list-style: none; /* Loại bỏ dấu chấm mặc định của list */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Căn giữa các mục menu */
+}
+
+#menu li {
+    display: inline-block; /* Hiển thị các mục trên cùng một hàng */
+    margin: 0 15px; /* Khoảng cách giữa các mục */
+}
+
+#menu a {
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của link */
+    color: white; /* Màu chữ */
+    font-weight: bold; /* In đậm chữ */
+    padding: 8px 12px; /* Khoảng cách xung quanh chữ */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển màu */
+    border-radius: 5px; /* Bo tròn góc */
+}
+
+#menu a:hover {
+    background-color: #555; /* Màu nền khi hover */
+    color: yellow; /* Màu chữ khi hover */
+}
